@@ -1,0 +1,56 @@
+@font-face{
+
+	font-family: 'Magnolia Script';
+	src: url('../fonts/Magnolia Script.otf');
+}
+@font-face{
+
+	font-family: 'Alegreya Regular';
+	src: url('../fonts/Alegreya Regular.ttf');
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body, html{
+
+	height: 100%;
+}
+.mainError{
+
+	width: 100%;
+	height: 100%;
+	display: grid;
+	background-color: #36393e;
+	justify-items: center;
+	align-items: center;
+}
+.error{
+
+	width: 50%;
+	height: 50%;
+	background-color: #232429;
+	box-shadow: 0px 14px 28px black, 0px 10px 10px black;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	grid-template-rows: 50% 10% 40%;
+	font-family: 'Magnolia Script';
+	color: #17e666;
+	font-size: 2em;
+}
+.error h1{
+
+	align-self: end;
+}
+.error p{
+
+	font-family: 'Alegreya Regular';
+	font-size: 1em;
+	align-self: start;
+}
+.error img{
+
+	width: 40%;
+	height: 80%;
+}

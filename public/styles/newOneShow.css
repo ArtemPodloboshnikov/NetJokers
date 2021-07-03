@@ -1,0 +1,158 @@
+body, html{
+
+	background-color: #36393e;
+	
+}
+.cover{
+	
+	grid-area: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 60vh;
+	display: grid;
+	grid-template-areas: 
+	". . . . . nav"
+	"author comments likes views . date";
+	grid-template-columns: repeat(6, 1fr);
+	grid-row-gap: 0%;
+	font-family: 'Alegreya Regular';
+	box-shadow: 4px 4px 5px black;
+	position: relative;
+}
+.navicon{
+
+	grid-area: nav;
+	align-self: center;
+	margin-top: -20%;
+	margin-left: 40%;
+}
+.cover__author{
+	
+	align-self: end;
+	grid-area: author;
+	width: 25%;
+	height: 10vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	margin-left: 15%;
+
+}
+.cover__comments img, .cover__likes input, .cover__views img{
+
+	width: 50%;
+	height: 10vh;
+	background-color: transparent;
+}
+.cover__comments-count, .cover__likes-count, .cover__views-count{
+
+	background-color: #e81e6a;
+	width: 5vw;
+	height: 5vh;
+	border-radius: 15px;
+	
+	color: #17e666;
+	text-align: center;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: grid;
+    align-items: center;
+    position: relative;
+    left: 30%;
+    top: 4%;
+}
+.cover__comments{
+	
+	align-self: end;
+	grid-area: comments;
+}
+.cover__likes{
+	
+	align-self: end;
+	grid-area: likes;
+}
+.cover__views{
+	
+	align-self: end;
+	grid-area: views;
+}
+.cover__date{
+
+	grid-area: date;
+	align-self: end;
+	font-size: 2em;
+	color: #17e666;
+}
+.cover__comments, .cover__likes, .cover__author, .cover__views, .cover__date{
+
+	top: -5%;
+	position: relative;
+}
+[aria-label] {
+    position: relative;
+    font-family: 'Magnolia Script';
+}
+[aria-label]:after {
+    content: attr(aria-label); /* атрибут метка */
+    display: none; /* скрываем контейнер */
+    position: absolute;
+    top: 110%; /* расстояние от ссылки от верхней границы */
+    left: 0%; /* смещение влево */
+    z-index: 2; /* блок поверх параграфа с текстом */
+    padding: 15%;
+    line-height: 15px; /* выравнивание подсказки по центру */
+    white-space: nowrap; /* не переносить на другую строку */
+    color: #17e666; /* цвет подсказки */
+    background-color: #232429; /* цвет контейнера */
+    border-left: 8px solid #e81e6a; /* красная рамка слева */
+    border-radius: 5px; /* скругленные края блока */
+    box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+ [aria-label]:hover:after {
+    display: block;
+}
+.article{
+	
+	grid-area: article;
+	width: 100%;
+	height: auto;
+	background-color: #36393e;
+	display: grid;
+	justify-items: center;
+	font-family: 'Alegreya Regular';
+}
+.article__title{
+
+	text-align: center;
+	font-size: 3em;
+	width: 80%;
+	word-wrap: break-word;
+	color: #17e666;
+}
+.article__content{
+
+	width: 90%;
+	font-size: 2em;
+	color: #e81e6a;
+	
+}
+.article__tags{
+
+	width: 100%;
+	background-color: #232429;
+	box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+.article__tags p{
+
+	margin: 1%;
+	font-size: 2em;
+}
+.article__tags p > a{
+
+	color: #17e666;
+	
+}

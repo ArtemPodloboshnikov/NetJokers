@@ -1,0 +1,108 @@
+body, html{
+
+	height: 100%;
+}
+.newsMaker, .mainTitle{
+
+	width: 100%;
+	height: 100%;
+	background-color: #36393e;
+	display: grid;
+	justify-items: center;
+	align-items: center; 
+}
+.newsMaker form, .mainTitle form{
+
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center; 
+	grid-template-rows: 2fr 1fr 2fr 1fr 1fr;
+}
+.loadFileCover{
+
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.mainTitle form{
+
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+}
+.mainTitle button{
+
+	align-self: start;
+}
+.mainTitle form .search{
+
+	height: 30%;
+}
+.newsMaker__title, .mainTitle__title{
+
+	width: 70%;
+	height: 10vh;
+	margin-top: 5%;
+}
+.commentForm{
+
+	box-shadow: inset 2px 2px 2px black, inset -2px -2px 2px black;
+	height: 80%;
+	align-self: start;
+}
+.preview, .send, .load{
+
+	width: 50%;
+}
+.newsMaker__buttons{
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	height: 100%;
+}
+.enter_tags_categories{
+
+	width: 80%;
+	height: 60%;
+}
+.tagsANDcategories{
+
+	align-self: start;
+}
+.search-news__category, .search-news__tag, .myArticles{
+
+	width: 100%;
+	height: 5vh;
+	font-size: 2em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-row-gap: 10%;
+	grid-column-gap: 3%;
+}
+.myArticles{
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	height: 25vh;
+	justify-items: center;
+}
+.myArticles button{
+
+	width: 18%;
+	height: 11vh;
+}
+.search{
+
+	width: 80%;
+
+}
+.publish{
+
+	grid-column: 3 / 3;
+}

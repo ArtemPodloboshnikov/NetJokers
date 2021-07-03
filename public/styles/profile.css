@@ -1,0 +1,152 @@
+html, body{
+
+	height: 100%;
+}
+.mainProfile{
+
+	min-height: 100%;
+	background-color: #36393e;
+	width: 100%;
+	display: grid;
+	grid-row-gap: 1%;
+	
+
+}
+.myProfile{
+
+	grid-template-areas: 
+	"name"
+	"password"
+	"repeatPassword"
+	"currentPassword";
+}
+.mainProfile__image-profileImage{
+
+	width: 16vw;
+	height: 30vh;
+	border-radius: 50%;
+	object-fit: cover;
+	grid-area: myImage;
+}
+.mainProfile__name, .mainProfile__image, .mainProfile__password, .mainProfile__repeatPassword, .mainProfile__currentPassword{
+
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+.mainProfile__image{
+
+	height: 40vh;
+}
+.mainProfile__name, .mainProfile__myImages, .mainProfile__password, .mainProfile__repeatPassword, .mainProfile__currentPassword{
+	
+	height: 20vh;
+}
+.mainProfile__image{
+
+	margin-top: 10%;
+	display: grid;
+	position: absolute;
+	grid-template-areas: 
+	". myImage ."
+	"form form form";
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	z-index: 3;
+}
+.input__file-wrapper{
+
+	width: 15vw;
+}
+.load{
+
+	width: 12vw;
+	margin-right: 55%;
+}
+.mainProfile__image form{
+
+	grid-area: form;
+	display: grid;
+	grid-template-areas:
+	"file load";
+	grid-column-gap: 25%;
+	align-items: center;
+	justify-items: center;
+}
+.mainProfile__image > .input__file-wrapper{
+
+	grid-area: file;
+}
+.mainProfile__image > button{
+
+	grid-area: load;
+	width: 12vw;
+}
+.mainProfile__name{
+
+	grid-area: name;
+	background-color: red;
+}
+.mainProfile__password{
+
+	grid-area: password;
+	background-color: yellow;
+}
+.mainProfile__repeatPassword{
+
+	grid-area: repeatPassword;
+	background-color: green;
+}
+.mainProfile__currentPassword{
+
+	grid-area: currentPassword;
+	background-color: silver;
+}
+.mainProfile__myImages{
+
+	grid-area: myImages;
+	background-color: grey;
+
+
+}
+/* Alien profile*/
+
+.mainProfile__alienImage{
+
+	width: 20%;
+	height: 40vh;
+	display: grid;
+	justify-items: center;
+}
+.mainProfile__alienImage img{
+
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+.mainProfile__mainAlienImage, .mainProfile__alienDescription, .mainProfile__alienSocialNetworks{
+
+	width: 100%;
+	height: auto;
+	display: grid;
+	justify-items: center;
+	align-items: center; 
+}
+.mainProfile__alienSocialNetworks{
+
+	display: grid;
+	align-items: start;
+}
+.mainProfile__alienSocialNetworks{
+
+	height: auto;
+}
+.mainProfile__alienDescription p, .mainProfile__alienSocialNetworks p{
+
+	width: 80%;
+	text-align: center;
+	font-family: "Alegreya Regular";
+	color: #17e666;
+	font-size: 2em; 
+}

@@ -1,0 +1,61 @@
+body{
+
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: #36393E;
+}
+.window, .window > form{
+
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: #232429;
+	width: 50%;
+	height: 50%;
+}
+.window{
+
+	grid-template-areas: 
+	". heart ."
+	"diamonds form spades"
+	". clubs .";
+	grid-template-columns: 1fr 5fr 1fr;
+	box-shadow: 0px 14px 28px black, 0px 10px 10px black;
+}
+.window > form{
+
+	grid-area: form;
+	justify-content: center;
+	align-content: center;
+	grid-row-gap: 10%;
+}
+.window img{
+
+	width: 80%;
+	height: 80%;
+}
+.diamonds{
+
+	grid-area: diamonds;
+}
+.clubs{
+
+	grid-area: clubs;
+}
+.heart{
+
+	grid-area: heart;
+}
+.spades{
+
+	grid-area: spades;
+}
+.input{
+
+	background-color: #15161a;
+}
+.preview{
+
+	width: 50%;
+}
